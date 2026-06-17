@@ -93,7 +93,7 @@ Port 4 is dedicated to the HA Reserved Management Interface. This interface allo
 *The interface with assigned public IP addresses should be protected by leveraging either VPC Security Groups or the vFSA trusthost capability to enforce access controls (see: https://docs.fortinet.com/document/fortigate/6.4.0/hardening-your-fortigate/582009/system-administrator-best-practices)*
 
 
-It should be considered that each VSI in IBM Cloud VPC supports a maximum of five virtual network interfaces (VNIs). Moreover, the instance’s aggregate network throughput is evenly apportioned across all attached VNIs; consequently, dedicating interfaces to management and HA heartbeat traffic, both typically low bandwidth, can reduce the effective headroom available to data plane interfaces. Both constraints can be solved by selecting VPC Gen 4 profiles, which provide enhanced networking characteristics (see: https://cloud.ibm.com/docs/vpc?topic=vpc-general-purpose-vsi-profiles-gen4-intel&interface=ui). 
+It should be considered that each VSI in IBM Cloud VPC supports a maximum of five virtual network interfaces (VNIs). Moreover, the instance’s aggregate network throughput is evenly apportioned across all attached VNIs; consequently, dedicating interfaces to management and HA heartbeat traffic, both typically low bandwidth, can reduce the effective headroom available to data plane interfaces. Both constraints can be solved by selecting VPC Gen 4 profiles, which provide enhanced networking characteristics (see: https://cloud.ibm.com/docs/vpc?topic=vpc-general-purpose-vsi-profiles-gen4-intel&interface=ui).
 
 
 See here the configuration for the High Availability:
@@ -140,6 +140,7 @@ Where 10.0.0.10 is the IP address of the interface Port 1 in the Active Fortigat
 
 ## Outbound connectivity from the Spoke VPCs
 {: #outbound-connectivity-from-the-Spoke-vpcs}
+
 Moreover, in order to allow outbound connectivity from the spoke VSIs to internet, we have to add a new route into the route table for the Transit Gateway.
 
 Select the route table that has the transit Gateway as Traffic source
@@ -160,6 +161,7 @@ You can check that this route has been advertised into the Transit Gateway (run 
 
 ## Route for the Direct Link
 {: #route-for-the-direct-link}
+
 The last step is to configure the route for the routing table for the traffic having source the Direct Link.
 
 ![Image 23](images/image-23.png){: caption="Image 23" caption-side="bottom"}
@@ -186,14 +188,16 @@ In our case it should be enabled on port 1 and port 2; see this example.
 in a public cloud environment, standard static route configurations should not be synchronized because primary and secondary nodes require different gateway IPs depending on their availability zones.
 
 In order to achive that, we disable the HA sync for the static route, by running this command via th Fortigate CLI
-<em>
+```text
 config system vdom-exception
 edit 1
 set object router.static
 next
 end
-</em>
-Once the syncronization for static routes has been disabled, we can, we have to configure them for both the external and internal traffic where the gateway is the gateway of the subnets for the IP of both the “traffic” port (port1 and port2). In our case the gateway IPs is 10.0.0.1 and 10.0.1.1 for the zone 1 and 10.0.64.1 and 10.0.65.1 for the zone 2. 
+```
+{: codeblock}
+
+Once the syncronization for static routes has been disabled, we can, we have to configure them for both the external and internal traffic where the gateway is the gateway of the subnets for the IP of both the “traffic” port (port1 and port2). In our case the gateway IPs is 10.0.0.1 and 10.0.1.1 for the zone 1 and 10.0.64.1 and 10.0.65.1 for the zone 2.
 
 The Destination subnets are all the subnets to be connected inside the Cloud and to subnets connected via VPN and Direct Link.
 
