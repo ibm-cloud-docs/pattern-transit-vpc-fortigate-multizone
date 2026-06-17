@@ -1,8 +1,8 @@
 toc:
   properties:
-    subcollection: pattern-transit-vpc-fortigate
-    href: /docs/pattern-transit-vpc-fortigate
-    path: pattern-transit-vpc-fortigate
+    subcollection: pattern-transit-vpc-fortigate-multizone
+    href: /docs/pattern-transit-vpc-fortigate-multizone
+    path: pattern-transit-vpc-fortigate-multizone
     audience: solution
     category: solution_docs
     content-type: deployment
