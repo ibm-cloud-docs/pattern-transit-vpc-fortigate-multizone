@@ -1,0 +1,29 @@
+toc:
+  properties:
+    subcollection: pattern-transit-vpc-fortigate
+    href: /docs/pattern-transit-vpc-fortigate
+    path: pattern-transit-vpc-fortigate
+    audience: solution
+    category: solution_docs
+    content-type: deployment
+    use-case: Network appliances
+    deployable: false
+    description: Use of FortiGate appliances in a transit VPC pattern
+    label: Docs subcollection title
+  entries:
+  - navgroup:
+      id: overview
+      topics:
+      - topic.md
+  - navgroup:
+      id: architecture
+      topics:
+      - reference-architecture.md
+  - navgroup:
+      id: deploy
+      topics:
+      - how-to.md
+  - navgroup:
+      id: reference
+      topics:
+      - responsibilities-da.md
