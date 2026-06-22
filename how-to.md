@@ -69,6 +69,9 @@ See below the set of parameters as presented in the UI for the Schematics worksp
 
 ![Image 5](images/image-05.png){: caption="Image 5" caption-side="bottom"}
 
+This figure shows how the four FortiGate interfaces are mapped to and connected with the corresponding subnets within the IBM Cloud VPC.
+
+![Image 5b](images/image-05b.png){: caption="Image 5b" caption-side="bottom"}
 
 
 ## Fortigate appliances description
