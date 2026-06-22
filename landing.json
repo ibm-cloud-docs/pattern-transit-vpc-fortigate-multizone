@@ -1,9 +1,7 @@
 {
   "version": 2,
-  "title": "Securing multiple landing zones with a transit VPC and Fortigate firewalls",
+  "title": "Securing Multiple Landing Zones with a Transit VPC and FortiGate Firewalls Across Multiple Zones",
   "introduction": "This is a description of what the user will be able to find in the content for your solution.",
-  "product_page": "https://ibm.com/cloud/solution-page",
-  "deployment_url": "https://cloud.ibm.com/catalog/content/url/to/deploy",
   "section_topics": {
     "links": [
       {
@@ -19,8 +17,8 @@
         "href": "/docs/pattern-transit-vpc-fortigate-multizone?topic=pattern-transit-vpc-fortigate-mzr-deployment"
       },
       {
-        "title": "Securing multiple landing zones with a transit VPC and advanced security capabilities",
-        "href": "/docs/pattern-transit-vpc?topic=pattern-transit-vpc-transit-vpc"
+        "title": "Related resources",
+        "href": "/docs/pattern-transit-vpc-fortigate-multizone?topic=pattern-transit-vpc-fortigate-multizone-related-resources"
       }
     ]
   },
