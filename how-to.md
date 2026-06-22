@@ -21,7 +21,7 @@ subcollection: pattern-transit-vpc-fortigate
 
 In order to deploy the FortiGate appliance in HA mode (Active/Passive) in a Cross Zone mode, select this offering in the catalog.
 
-![Image 2](images/image-02.png){: caption-side="bottom"}
+![Image 2](images/image-02.png){: caption="Image 2" caption-side="bottom"}
 
 You'll be presented with a set of parameters that you must specify to correctly deploy and configure the appliances. An IBM Cloud Schematics workspace will be created automatically to run a Terraform script.
 
@@ -127,7 +127,7 @@ You should see something like this in the list of the PARs.
 
 ![Image 12](images/image-12.png){: caption="Image 12" caption-side="bottom"}
 
-Also the route for this PAR is already created by the automation:
+Also an ingress custom route associated to this public address range is already created by the automation:
 Go to the Routing Tables, select the VPC transit-vpc and you should see something like this:
 
 ![Image 13](images/image-13.png){: caption="Image 13" caption-side="bottom"}
@@ -225,6 +225,8 @@ Then we create two policies to allow traffic from/to PowerVS, using port1 and po
 
 ![Image 30](images/image-30.png){: caption="Image 30" caption-side="bottom"}
 ![Image 31](images/image-31.png){: caption="Image 31" caption-side="bottom"}
+
+The previous firewall policy is a simplified, highly permissive example intended for demonstration purposes. In real-world deployments, policies should be more restrictive to allow the FortiGate to effectively filter, inspect, and secure network traffic.
 
 ## Tutorial, testing connectivity
 {: #tutorial-testing-connectivity}
