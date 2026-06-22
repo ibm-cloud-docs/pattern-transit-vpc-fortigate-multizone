@@ -300,7 +300,7 @@ Create a Firewall Policy that allows traffic from the internal interface (port 2
 
 ![Image 42](images/image-42.png){: caption="Image 42" caption-side="bottom"}
 
-It should be noted that the VSI IP addresses are NAT'ed to the Public Address Range ip addresses as defined in the Virtual IPs configuration only if the Public Gateway for the Subnet 1 (the IP address of the Port 1 belongs to it).
+It should be noted that the VSI IP addresses are NAT'ed to the Public Address Range ip addresses as defined in the Virtual IPs configuration only if the Public Gateway for the Subnet 1 (the IP address of the Port 1 belongs to it) is disable.
 If the Public Gateway needs to enabled in order to allow outbound connection for the Fortigate virtual appliance (for example for updates or FortiGard subscription), you shoud create a new route for the default Route Table for the transit-vcp, like in this example:
 
 ![Image 43](images/image-43.png){: caption="Image 43" caption-side="bottom"}
