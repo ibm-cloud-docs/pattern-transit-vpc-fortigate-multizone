@@ -25,7 +25,7 @@ In order to deploy the FortiGate appliance in HA mode (Active/Passive) in a Cros
 
 You'll be presented with a set of parameters that you must specify to correctly deploy and configure the appliances. An IBM Cloud Schematics workspace will be created automatically to run a Terraform script.
 
-Here is the list of the parameters:
+Below is a list of parameters. The values shown are illustrative for this particular deployment and should be modified as appropriate for your setup:
 
 | Variable | Description | Value |
 |----------|-------------|-------|
@@ -82,7 +82,7 @@ In the Networking tab you should see the list of the VNIs that have been created
 
 ![Image 7](images/image-07.png){: caption="Image 7" caption-side="bottom"}
 
-Port 1 is the exteranl port, used for all the connectivity from/to the IBM Cloud.
+Port 1 is the external port, used for all the connectivity from/to the IBM Cloud.
 
 Port 2 is for the internal traffic so between the Spoke VPCs
 
