@@ -227,6 +227,7 @@ Notice the Implicit Deny policy is created by default once the FortiGate is depl
 Then we create two policies to allow traffic from/to PowerVS, using port1 and port2 and the Address we created. You should see something like this
 
 ![Image 30](images/image-30.png){: caption="Image 30" caption-side="bottom"}
+
 ![Image 31](images/image-31.png){: caption="Image 31" caption-side="bottom"}
 
 The previous firewall policy is a simplified, highly permissive example intended for demonstration purposes. In real-world deployments, policies should be more restrictive to allow the FortiGate to effectively filter, inspect, and secure network traffic.
