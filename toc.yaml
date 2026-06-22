@@ -9,7 +9,7 @@ toc:
     use-case: Network appliances
     deployable: false
     description: Use of FortiGate appliances in a transit VPC pattern
-    label: Docs subcollection title
+    label: Securing Multiple Landing Zones with a Transit VPC and FortiGate Firewalls Across Multiple Zones
   entries:
   - navgroup:
       id: overview
