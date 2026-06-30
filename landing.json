@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "title": "Securing Multiple Landing Zones with a Transit VPC and FortiGate Firewalls Across Multiple Zones",
+  "introduction": "This is a description of what the user will be able to find in the content for your solution.",
+  "section_topics": {
+    "links": [
+      {
+        "title": "Overview",
+        "href": "/docs/pattern-transit-vpc-fortigate-multizone?topic=pattern-transit-vpc-fortigate-mzr-overview"
+      },
+      {
+        "title": "Architecture",
+        "href": "/docs/pattern-transit-vpc-fortigate-multizone?topic=pattern-transit-vpc-fortigate-mzr-architecture"
+      },
+      {
+        "title": "Deployment",
+        "href": "/docs/pattern-transit-vpc-fortigate-multizone?topic=pattern-transit-vpc-fortigate-mzr-deployment"
+      },
+      {
+        "title": "Related resources",
+        "href": "/docs/pattern-transit-vpc-fortigate-multizone?topic=pattern-transit-vpc-fortigate-multizone-related-resources"
+      }
+    ]
+  },
+  "section_architectures": [
+    {
+      "title": "Architecture",
+      "href": "/docs/pattern-transit-vpc-fortigate-multizone?topic=pattern-transit-vpc-fortigate-mzr-architecture",
+      "deployable": true
+    }
+  ]
+}

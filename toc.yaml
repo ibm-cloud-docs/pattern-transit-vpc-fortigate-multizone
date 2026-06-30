@@ -1,0 +1,29 @@
+toc:
+  properties:
+    subcollection: pattern-transit-vpc-fortigate-multizone
+    href: /docs/pattern-transit-vpc-fortigate-multizone
+    path: pattern-transit-vpc-fortigate-multizone
+    audience: solution
+    category: solution_docs
+    content-type: deployment
+    use-case: Network appliances
+    deployable: false
+    description: Use of FortiGate appliances in a transit VPC pattern
+    label: Securing Multiple Landing Zones with a Transit VPC and FortiGate Firewalls Across Multiple Zones
+  entries:
+  - navgroup:
+      id: overview
+      topics:
+      - topic.md
+  - navgroup:
+      id: architecture
+      topics:
+      - reference-architecture.md
+  - navgroup:
+      id: deploy
+      topics:
+      - how-to.md
+  - navgroup:
+      id: reference
+      topics:
+      - responsibilities-da.md
