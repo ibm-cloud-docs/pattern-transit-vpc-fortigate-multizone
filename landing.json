@@ -6,15 +6,15 @@
     "links": [
       {
         "title": "Overview",
-        "href": "/docs/pattern-transit-vpc-fortigate-multizone?topic=pattern-transit-vpc-fortigate-mzr-overview"
+        "href": "/docs/pattern-transit-vpc-fortigate-multizone?topic=pattern-transit-vpc-fortigate-multizone-overview"
       },
       {
         "title": "Architecture",
-        "href": "/docs/pattern-transit-vpc-fortigate-multizone?topic=pattern-transit-vpc-fortigate-mzr-architecture"
+        "href": "/docs/pattern-transit-vpc-fortigate-multizone?topic=pattern-transit-vpc-fortigate-multizone-architecture"
       },
       {
         "title": "Deployment",
-        "href": "/docs/pattern-transit-vpc-fortigate-multizone?topic=pattern-transit-vpc-fortigate-mzr-deployment"
+        "href": "/docs/pattern-transit-vpc-fortigate-multizone?topic=pattern-transit-vpc-fortigate-multizone-deployment"
       },
       {
         "title": "Related resources",
@@ -25,7 +25,7 @@
   "section_architectures": [
     {
       "title": "Architecture",
-      "href": "/docs/pattern-transit-vpc-fortigate-multizone?topic=pattern-transit-vpc-fortigate-mzr-architecture",
+      "href": "/docs/pattern-transit-vpc-fortigate-multizone?topic=pattern-transit-vpc-fortigate-multizone-architecture",
       "deployable": true
     }
   ]
