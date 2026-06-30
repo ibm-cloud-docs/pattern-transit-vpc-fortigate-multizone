@@ -1,12 +1,12 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2026-02-26"
+  years: 2026
+lastupdated: "2026-06-30"
 
 keywords:
 
-subcollection: pattern-transit-vpc-fortigate
+subcollection: pattern-transit-vpc-fortigate-multizone
 
 ---
 
